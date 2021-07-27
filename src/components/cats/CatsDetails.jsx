@@ -4,10 +4,7 @@ import styles from './CatsDetails.module.css';
 
 const CatsDetails = ({ cats }) => {
     const catList = cats.map(cat => (
-        <ul
-          key={cat.id}
-          className={styles.CatsDetailsList}
-        >
+        <ul key={cat.id}>
           <li>Name: {cat.catName}</li>
           <li>Breed: {cat.breed}</li>
           <li>Fur Color: {cat.furColor}</li>

@@ -3,9 +3,15 @@ export const getCats = async() => {
         method: 'GET'
     })
     .then(res => res.json());
-    // .then((cats) => cats.map(cat => ({
-    //     id: cat.id,
-    //     catName: cat.catName,
-    //     breed: cat.breed
-    // })));
+};
+
+export const postCat = async(data) => {
+    return await fetch('https://demo-server-02-api-database.herokuapp.com/api/v1/cats', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json());
 };
