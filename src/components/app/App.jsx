@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../header/Header';
-import Cats from '../cats/Cats';
+import CatForm from '../cats/CatForm';
+import CatsDetails from '../cats/CatsDetails';
 import CatImage from '../cats/CatImage';
 import Footer from '../footer/Footer';
 import { getCats } from '../../services/catApi';
@@ -12,24 +13,23 @@ const App = () => {
 
   useEffect(() => {
     getCats()
-    .then(cats => setCats(cats))
-    
-    setLoading(false)
+    .then(cats => {
+      setCats(cats);
+      setLoading(false);
+    })
   }, []);
 
-  console.log(cats);
-  console.log(loading);
-
-  if(loading) return <h1>'Cats are loading...'</h1>;
+  if(loading) return <img style={{ width: '50vw', position: 'absolute', top: '5%', left: '25%' }} src='https://i.giphy.com/media/QyJ0We4GHpjBa7PvKL/giphy.webp' alt='cat loading gif' />;
 
   return (
     <div className={styles.App}>
       <Header />
-      <Cats cats={cats} />
+      <CatForm setCats={setCats} />
+      <CatsDetails cats={cats} />
       <CatImage />
       <Footer/>
     </div>
-  )
+  );
 };
 
-export default App
+export default App;

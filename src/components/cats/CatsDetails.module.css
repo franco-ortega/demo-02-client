@@ -1,16 +1,16 @@
 .CatsDetails {
     color: gold;
     font-size: 1.75vw;
-    width: 75vw;
+    width: 80vw;
     margin: 2vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.25vw;
+    gap: 2vw;
 }
 
-.CatsDetailsList {
+.CatsDetails ul {
     border: thin solid silver;
     border-radius: 2vw;
     box-shadow: 0vw 0vw 1vw 1vw black;
@@ -18,5 +18,14 @@
     padding: 1vw;
     list-style: none;
     font-size: 1.5vw;
-    
+    height: 20vh;
+    width: 16vw;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 900px) {
+    .CatsDetails ul {
+        height: 12vh;
+        width: 15vw;
+    }
 }

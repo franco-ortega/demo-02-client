@@ -11,8 +11,7 @@ const CatImage = () => {
         src={catUrl}
         alt="cat"
     />
-    )
-  }
-  
+    );
+  };
 
-export default CatImage
+export default CatImage;
