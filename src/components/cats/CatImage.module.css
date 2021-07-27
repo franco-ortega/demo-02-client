@@ -1,0 +1,6 @@
+.CatImage {
+    border-radius: 1vw;
+    box-shadow: .5vw .5vw .5vw .5vw black;
+    max-width: 30vw;
+    max-height: 30vh;
+}
