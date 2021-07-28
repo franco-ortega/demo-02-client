@@ -20,12 +20,37 @@
     font-size: 1.5vw;
     height: 20vh;
     width: 16vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     overflow: scroll;
 }
 
 @media screen and (max-width: 900px) {
+    .CatsDetails {
+        margin: 3vw 2vw;
+    }
+
     .CatsDetails ul {
         height: 12vh;
-        width: 15vw;
+        width: 25vw;
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .CatsDetails {
+        width: 85vw;
+        margin: 4vw 0vw;
+        gap: 4vw;
+    }
+
+    .CatsDetails ul {
+        padding: 2vw;
+        height: 13vh;
+        width: 40vw;
+        font-size: 3.5vw;
     }
 }

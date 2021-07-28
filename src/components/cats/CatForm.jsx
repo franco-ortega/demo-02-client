@@ -32,6 +32,8 @@ const CatForm = ({ setCats }) => {
           className={styles.CatForm}
           onSubmit={onFormSubmit}>
             <p>Add your cat to the list:</p>
+            <p>
+
             <label htmlFor="name">
                 <input required
                   id="name"
@@ -69,7 +71,8 @@ const CatForm = ({ setCats }) => {
                   value={age}
                   onChange={({ target }) => setAge(target.value)} />
             </label>
-            <button>Submit</button>
+            </p>
+            <p><button>Submit</button></p>
         </form>
     );
 };
