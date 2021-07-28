@@ -5,3 +5,20 @@
     max-width: 30vw;
     max-height: 30vh;
 }
+
+@media screen and (max-width: 900px) {
+    .CatImage {
+        margin: 3vw;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .CatImage {
+        border-radius: 3vw;
+        margin: 3vw;
+        max-width: 50vw;
+        max-height: 40vh;
+    }
+    
+}

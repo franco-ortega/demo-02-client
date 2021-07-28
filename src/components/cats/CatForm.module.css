@@ -4,7 +4,6 @@
     color: rebeccapurple;
     display: flex;
     flex-direction: row;
-    gap: 1vw;
     margin: 1vw;
     padding: .5vw;
     font-size: 1.5vw;
@@ -12,9 +11,13 @@
 
 .CatForm input {
     font-size: 1.25vw;
+    width: 10vw;
+    margin: 0 .5vw;
+    padding: .2vw;
 }
 
 .CatForm button {
+    background: lightgrey;
     border-radius: 1vw;
     height: fit-content;
     width: fit-content;
@@ -22,9 +25,50 @@
     font-size: 1vw;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .CatForm {
+        border-radius: 1vw;
+        margin: 3vw;
+        padding: 1vw;
         flex-direction: column;
         align-items: center;
-    }   
+        font-size: 2vw;
+    }
+
+    .CatForm input {
+        margin: .75vw .5vw;
+        width: 15vw;
+        font-size: 2vw;
+    }
+
+    .CatForm button {
+        border-radius: 1.5vw;
+        padding: .5vw .75vw;
+        font-size: 1.5vw;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .CatForm {
+        border-radius: 1vw;
+        margin: 3vw 1vw;
+        padding: .75vw;
+        align-items: center;
+        font-size: 5vw;
+        color: black;
+    }
+
+    .CatForm input {
+        font-size: 4vw;
+        padding: .5vw;
+        color: black;
+        width: 21vw;
+    }
+
+    .CatForm button {
+        border-radius: 1.5vw;
+        margin: 1vw;
+        padding: .5vw .75vw;
+        font-size: 3.5vw;
+    }    
 }
