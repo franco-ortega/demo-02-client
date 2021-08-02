@@ -7,7 +7,7 @@ const CatForm = ({ setCats }) => {
     const [name, setName] = useState('');
     const [breed, setBreed] = useState('');
     const [furColor, setFurColor] = useState('');
-    const [age, setAge] = useState(null);
+    const [age, setAge] = useState('');
 
     const onFormSubmit = (e) => {
         e.preventDefault();
