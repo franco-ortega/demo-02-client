@@ -1,7 +1,4 @@
 const API_URL = process.env.REACT_APP_API_URL;
-const LOCAL_URL = process.env.REACT_APP_LOCAL_URL;
-console.log(API_URL);
-console.log(LOCAL_URL);
 
 export const getCats = async() => {
     return await fetch(API_URL, {
