@@ -1,12 +1,14 @@
+const API_URL = process.env.REACT_APP_API_URL;
+
 export const getCats = async() => {
-    return await fetch('https://demo-server-02-api-database.herokuapp.com/api/v1/cats', {
+    return await fetch(API_URL, {
         method: 'GET'
     })
     .then(res => res.json());
 };
 
 export const postCat = async(data) => {
-    return await fetch('https://demo-server-02-api-database.herokuapp.com/api/v1/cats', {
+    return await fetch(API_URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
